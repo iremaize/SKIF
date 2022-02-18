@@ -1,0 +1,83 @@
+/run/verbose 2
+/run/initialize
+/control/execute vis.mac
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+/vis/viewer/refresh
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/set/viewpointVector -1 0 0
+/vis/viewer/set/lightsVector -1 0 0
+/vis/viewer/set/style wireframe
+/vis/viewer/set/auxiliaryEdge true
+/vis/viewer/set/lineSegmentsPerCircle 100
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/scene/notifyHandlers
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/notifyHandlers scene-0
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add gamma
+/vis/scene/notifyHandlers scene-0
+/vis/filtering/trajectories/particleFilter-0/invert true
+/vis/scene/notifyHandlers scene-0
+/vis/scene/endOfEventAction accumulate
+/vis/set/textLayout
+/vis/set/textColour
+/vis/scene/add/scale
+/vis/scene/notifyHandlers
+/vis/scene/add/eventID
+/vis/scene/notifyHandlers
+/vis/scene/add/date
+/vis/scene/notifyHandlers
+/vis/set/colour red
+/vis/set/lineWidth 2
+/vis/scene/add/frame
+/vis/scene/notifyHandlers
+/vis/set/colour
+/vis/set/lineWidth
+/vis/geometry/set/visibility World 0 false
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility Shape2 0 false
+/vis/geometry/set/visibility Shape3 0 false
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility Shape4 0 false
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility ShapeVac1 0 false
+/vis/geometry/set/visibility ShapeVac2 0 false
+/vis/geometry/set/visibility ShapeVac3 0 false
+/vis/geometry/set/visibility Shape3 0 false
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility Shape4 0 false
+/vis/scene/notifyHandlers
+/vis/geometry/set/visibility Shape5 0 false
+/vis/scene/notifyHandlers
+/vis/viewer/set/hiddenMarker true
+/vis/viewer/set/viewpointThetaPhi 120 150
+/vis/viewer/set/autoRefresh true
+/vis/viewer/refresh
+/vis/verbose warnings
+/control/execute run_test.mac
+/customiseDet/deadendThickness 10 mm
+/run/reinitializeGeometry
+/vis/scene/notifyHandlers scene-0
+/run/initialize
+/vis/scene/notifyHandlers scene-0
+/vis/scene/notifyHandlers scene-0
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+/gun/particle e-
+/gun/energy 3 GeV
+/tracking/verbose 0
+/analysis/setFileName hist1.csv
+/run/beamOn 10
+/vis/scene/notifyHandlers scene-0

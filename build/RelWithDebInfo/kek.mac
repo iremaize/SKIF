@@ -1,0 +1,23 @@
+# Macro file for example B1
+# 
+# Can be run in batch, without graphic
+# or interactively: Idle> /control/execute run1.mac
+#
+# Change the default number of workers (in multi-threading mode) 
+#/run/numberOfThreads 4
+
+
+# Initialize kernel
+#/customiseDet/deadendThickness 20 cm
+
+/run/initialize
+/control/verbose 0
+/run/verbose 0
+/event/verbose 0
+
+/gun/particle e-
+/gun/energy 3 GeV
+/tracking/verbose 0
+#
+/analysis/setFileName hist1.root
+/run/beamOn 1
