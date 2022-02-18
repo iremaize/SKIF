@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\load_gdml.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\src\G01ActionInitialization.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\src\G01PrimaryGeneratorAction.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include\G01ActionInitialization.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include\G01DetectorConstruction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include\G01PrimaryGeneratorAction.hh">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{A11428A3-2A6F-3290-B768-0055DF32F100}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{C333F8CF-D5E1-31DD-AF32-09E153BCB253}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

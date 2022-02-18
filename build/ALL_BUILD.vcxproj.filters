@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="D:\tube\CMakeLists.txt" />
+    <CustomBuild Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
   </ItemGroup>

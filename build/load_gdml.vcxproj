@@ -22,31 +22,31 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{3306BB30-037F-3DAF-95EE-C071B0458721}</ProjectGuid>
+    <ProjectGuid>{293D9218-1EC5-322B-B102-B898C23FF38A}</ProjectGuid>
     <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
     <Keyword>Win32Proj</Keyword>
     <Platform>x64</Platform>
-    <ProjectName>ALL_BUILD</ProjectName>
+    <ProjectName>load_gdml</ProjectName>
     <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
-    <ConfigurationType>Utility</ConfigurationType>
+    <ConfigurationType>Application</ConfigurationType>
     <CharacterSet>MultiByte</CharacterSet>
     <PlatformToolset>v142</PlatformToolset>
   </PropertyGroup>
@@ -59,50 +59,214 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
-    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">load_gdml.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">load_gdml</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">load_gdml.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">load_gdml</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">load_gdml.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">load_gdml</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">load_gdml.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">load_gdml</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zm200</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_CONSOLE;_WIN32;WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;G4INTY_USE_QT;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_OPENGL;G4LIB_BUILD_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_WIDGETS_LIB;QT_PRINTSUPPORT_LIB;QT_OPENGL_LIB;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_CONSOLE;_WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;G4INTY_USE_QT;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_OPENGL;G4LIB_BUILD_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_WIDGETS_LIB;QT_PRINTSUPPORT_LIB;QT_OPENGL_LIB;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\lib\G4Tree.lib;C:\Geant4\lib\G4GMocren.lib;C:\Geant4\lib\G4visHepRep.lib;C:\Geant4\lib\G4RayTracer.lib;C:\Geant4\lib\G4VRML.lib;C:\Geant4\lib\G4OpenGL.lib;C:\Geant4\lib\G4gl2ps.lib;C:\Geant4\lib\G4interfaces.lib;C:\Geant4\lib\G4persistency.lib;C:\Geant4\lib\G4error_propagation.lib;C:\Geant4\lib\G4readout.lib;C:\Geant4\lib\G4physicslists.lib;C:\Geant4\lib\G4parmodels.lib;C:\Geant4\lib\G4FR.lib;C:\Geant4\lib\G4vis_management.lib;C:\Geant4\lib\G4modeling.lib;glu32.lib;opengl32.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5OpenGLd.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5PrintSupportd.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Widgetsd.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Guid.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Cored.lib;C:\xerces\lib\xerces-c_3D.lib;C:\Geant4\lib\G4run.lib;C:\Geant4\lib\G4event.lib;C:\Geant4\lib\G4tracking.lib;C:\Geant4\lib\G4processes.lib;C:\Geant4\lib\G4analysis.lib;C:\Geant4\lib\G4expat.lib;C:\Geant4\lib\G4zlib.lib;C:\Geant4\lib\G4digits_hits.lib;C:\Geant4\lib\G4track.lib;C:\Geant4\lib\G4particles.lib;C:\Geant4\lib\G4geometry.lib;C:\Geant4\lib\G4materials.lib;C:\Geant4\lib\G4graphics_reps.lib;C:\Geant4\lib\G4intercoms.lib;C:\Geant4\lib\G4global.lib;C:\Geant4\lib\G4clhep.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/Debug/load_gdml.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/Debug/load_gdml.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zm200</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_CONSOLE;_WIN32;WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;G4INTY_USE_QT;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_OPENGL;G4LIB_BUILD_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_PRINTSUPPORT_LIB;QT_OPENGL_LIB;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_CONSOLE;_WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;G4INTY_USE_QT;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_OPENGL;G4LIB_BUILD_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_PRINTSUPPORT_LIB;QT_OPENGL_LIB;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\lib\G4Tree.lib;C:\Geant4\lib\G4GMocren.lib;C:\Geant4\lib\G4visHepRep.lib;C:\Geant4\lib\G4RayTracer.lib;C:\Geant4\lib\G4VRML.lib;C:\Geant4\lib\G4OpenGL.lib;C:\Geant4\lib\G4gl2ps.lib;C:\Geant4\lib\G4interfaces.lib;C:\Geant4\lib\G4persistency.lib;C:\Geant4\lib\G4error_propagation.lib;C:\Geant4\lib\G4readout.lib;C:\Geant4\lib\G4physicslists.lib;C:\Geant4\lib\G4parmodels.lib;C:\Geant4\lib\G4FR.lib;C:\Geant4\lib\G4vis_management.lib;C:\Geant4\lib\G4modeling.lib;glu32.lib;opengl32.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5OpenGL.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5PrintSupport.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Core.lib;C:\xerces\lib\xerces-c_3D.lib;C:\Geant4\lib\G4run.lib;C:\Geant4\lib\G4event.lib;C:\Geant4\lib\G4tracking.lib;C:\Geant4\lib\G4processes.lib;C:\Geant4\lib\G4analysis.lib;C:\Geant4\lib\G4expat.lib;C:\Geant4\lib\G4zlib.lib;C:\Geant4\lib\G4digits_hits.lib;C:\Geant4\lib\G4track.lib;C:\Geant4\lib\G4particles.lib;C:\Geant4\lib\G4geometry.lib;C:\Geant4\lib\G4materials.lib;C:\Geant4\lib\G4graphics_reps.lib;C:\Geant4\lib\G4intercoms.lib;C:\Geant4\lib\G4global.lib;C:\Geant4\lib\G4clhep.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/Release/load_gdml.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/Release/load_gdml.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zm200</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <FavorSizeOrSpeed>Size</FavorSizeOrSpeed>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_CONSOLE;_WIN32;WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;G4INTY_USE_QT;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_OPENGL;G4LIB_BUILD_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_PRINTSUPPORT_LIB;QT_OPENGL_LIB;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_CONSOLE;_WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;G4INTY_USE_QT;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_OPENGL;G4LIB_BUILD_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_PRINTSUPPORT_LIB;QT_OPENGL_LIB;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\lib\G4Tree.lib;C:\Geant4\lib\G4GMocren.lib;C:\Geant4\lib\G4visHepRep.lib;C:\Geant4\lib\G4RayTracer.lib;C:\Geant4\lib\G4VRML.lib;C:\Geant4\lib\G4OpenGL.lib;C:\Geant4\lib\G4gl2ps.lib;C:\Geant4\lib\G4interfaces.lib;C:\Geant4\lib\G4persistency.lib;C:\Geant4\lib\G4error_propagation.lib;C:\Geant4\lib\G4readout.lib;C:\Geant4\lib\G4physicslists.lib;C:\Geant4\lib\G4parmodels.lib;C:\Geant4\lib\G4FR.lib;C:\Geant4\lib\G4vis_management.lib;C:\Geant4\lib\G4modeling.lib;glu32.lib;opengl32.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5OpenGL.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5PrintSupport.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Core.lib;C:\xerces\lib\xerces-c_3D.lib;C:\Geant4\lib\G4run.lib;C:\Geant4\lib\G4event.lib;C:\Geant4\lib\G4tracking.lib;C:\Geant4\lib\G4processes.lib;C:\Geant4\lib\G4analysis.lib;C:\Geant4\lib\G4expat.lib;C:\Geant4\lib\G4zlib.lib;C:\Geant4\lib\G4digits_hits.lib;C:\Geant4\lib\G4track.lib;C:\Geant4\lib\G4particles.lib;C:\Geant4\lib\G4geometry.lib;C:\Geant4\lib\G4materials.lib;C:\Geant4\lib\G4graphics_reps.lib;C:\Geant4\lib\G4intercoms.lib;C:\Geant4\lib\G4global.lib;C:\Geant4\lib\G4clhep.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/MinSizeRel/load_gdml.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/MinSizeRel/load_gdml.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) -Zm200</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <UseFullPaths>false</UseFullPaths>
+      <WarningLevel>Level3</WarningLevel>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);_CONSOLE;_WIN32;WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;G4INTY_USE_QT;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_OPENGL;G4LIB_BUILD_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_PRINTSUPPORT_LIB;QT_OPENGL_LIB;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_CONSOLE;_WIN32;OS;XPNET;_CRT_SECURE_NO_DEPRECATE;_WINDOWS;NDEBUG;G4INTY_USE_QT;G4UI_USE_QT;G4VIS_USE_OPENGLQT;G4VIS_USE_OPENGL;G4LIB_BUILD_DLL;QT_GUI_LIB;QT_CORE_LIB;QT_NO_DEBUG;QT_WIDGETS_LIB;QT_PRINTSUPPORT_LIB;QT_OPENGL_LIB;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include;C:\Geant4\include\Geant4;C:\Qt\5.15.1\msvc2019_64\include;C:\Qt\5.15.1\msvc2019_64\include\QtGui;C:\Qt\5.15.1\msvc2019_64\include\QtANGLE;C:\Qt\5.15.1\msvc2019_64\include\QtCore;C:\Qt\5.15.1\msvc2019_64\.\mkspecs\win32-msvc;C:\Qt\5.15.1\msvc2019_64\include\QtWidgets;C:\Qt\5.15.1\msvc2019_64\include\QtPrintSupport;C:\Qt\5.15.1\msvc2019_64\include\QtOpenGL;C:\xerces\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
       <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
       <ProxyFileName>%(Filename)_p.c</ProxyFileName>
     </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Geant4\lib\G4Tree.lib;C:\Geant4\lib\G4GMocren.lib;C:\Geant4\lib\G4visHepRep.lib;C:\Geant4\lib\G4RayTracer.lib;C:\Geant4\lib\G4VRML.lib;C:\Geant4\lib\G4OpenGL.lib;C:\Geant4\lib\G4gl2ps.lib;C:\Geant4\lib\G4interfaces.lib;C:\Geant4\lib\G4persistency.lib;C:\Geant4\lib\G4error_propagation.lib;C:\Geant4\lib\G4readout.lib;C:\Geant4\lib\G4physicslists.lib;C:\Geant4\lib\G4parmodels.lib;C:\Geant4\lib\G4FR.lib;C:\Geant4\lib\G4vis_management.lib;C:\Geant4\lib\G4modeling.lib;glu32.lib;opengl32.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5OpenGL.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5PrintSupport.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Widgets.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Gui.lib;C:\Qt\5.15.1\msvc2019_64\lib\Qt5Core.lib;C:\xerces\lib\xerces-c_3D.lib;C:\Geant4\lib\G4run.lib;C:\Geant4\lib\G4event.lib;C:\Geant4\lib\G4tracking.lib;C:\Geant4\lib\G4processes.lib;C:\Geant4\lib\G4analysis.lib;C:\Geant4\lib\G4expat.lib;C:\Geant4\lib\G4zlib.lib;C:\Geant4\lib\G4digits_hits.lib;C:\Geant4\lib\G4track.lib;C:\Geant4\lib\G4particles.lib;C:\Geant4\lib\G4geometry.lib;C:\Geant4\lib\G4materials.lib;C:\Geant4\lib\G4graphics_reps.lib;C:\Geant4\lib\G4intercoms.lib;C:\Geant4\lib\G4global.lib;C:\Geant4\lib\G4clhep.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64 /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/RelWithDebInfo/load_gdml.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/RelWithDebInfo/load_gdml.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
   </ItemDefinitionGroup>
   <ItemGroup>
     <CustomBuild Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\CMakeLists.txt">
@@ -162,6 +326,12 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\load_gdml.cc" />
+    <ClCompile Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\src\G01ActionInitialization.cc" />
+    <ClCompile Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\src\G01PrimaryGeneratorAction.cc" />
+    <ClInclude Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include\G01ActionInitialization.hh" />
+    <ClInclude Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include\G01DetectorConstruction.hh" />
+    <ClInclude Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\include\G01PrimaryGeneratorAction.hh" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\ZERO_CHECK.vcxproj">
@@ -169,10 +339,6 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
-    </ProjectReference>
-    <ProjectReference Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\load_gdml.vcxproj">
-      <Project>{293D9218-1EC5-322B-B102-B898C23FF38A}</Project>
-      <Name>load_gdml</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

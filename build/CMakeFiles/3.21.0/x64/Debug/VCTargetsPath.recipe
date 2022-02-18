@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\tube\build\CMakeFiles\3.21.0\x64\Debug\VCTargetsPath</FullPath>
+      <FullPath>C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\CMakeFiles\3.21.0\x64\Debug\VCTargetsPath</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
