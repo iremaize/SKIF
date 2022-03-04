@@ -23,37 +23,43 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file persistency/gdml/G01/include/G01PrimaryGeneratorAction.hh
-/// \brief Definition of the G01PrimaryGeneratorAction class
 //
-//
-//
-//
+/// \file B1PrimaryGeneratorAction.hh
+/// \brief Definition of the B1PrimaryGeneratorAction class
 
-#ifndef _G01PRIMARYGENERATORACTION_H_
-#define _G01PRIMARYGENERATORACTION_H_
+#ifndef B1PrimaryGeneratorAction_h
+#define B1PrimaryGeneratorAction_h 1
 
 #include "G4VUserPrimaryGeneratorAction.hh"
-
+#include "G4ParticleGun.hh"
 #include "globals.hh"
 
-class G4Event;
 class G4ParticleGun;
+class G4Event;
+class G4Box;
 
-/// Minimal primary generator action to demonstrate the use of GDML geometries
+/// The primary generator action class with particle gun.
+///
+/// The default kinematic is a 6 MeV gamma, randomly distribued 
+/// in front of the phantom across 80% of the (X,Y) phantom size.
 
-class G01PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
+class B1PrimaryGeneratorAction : public G4VUserPrimaryGeneratorAction
 {
   public:
+    B1PrimaryGeneratorAction();    
+    virtual ~B1PrimaryGeneratorAction();
 
-    G01PrimaryGeneratorAction();
-   ~G01PrimaryGeneratorAction();
-
-   virtual void GeneratePrimaries(G4Event* anEvent);
-
+    // method from the base class
+    virtual void GeneratePrimaries(G4Event*);         
+  
+    // method to access particle gun
+    const G4ParticleGun* GetParticleGun() const { return fParticleGun; }
+  
   private:
-
-    G4ParticleGun* fParticleGun;
+    G4ParticleGun*  fParticleGun; // pointer a to G4 gun class
+    G4Box* fEnvelopeBox;
 };
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 #endif

@@ -23,37 +23,51 @@
 // * acceptance of all terms of the Geant4 Software license.          *
 // ********************************************************************
 //
-/// \file persistency/gdml/G01/include/G01DetectorConstruction.hh
-/// \brief Definition of the G01DetectorConstruction class
 //
-//
-//
-//
+/// \file B1DetectorConstruction.hh
+/// \brief Definition of the B1DetectorConstruction class
 
-#ifndef _G01DETECTORCONSTRUCTION_H_
-#define _G01DETECTORCONSTRUCTION_H_
+#ifndef B1DetectorConstruction_h
+#define B1DetectorConstruction_h 1
 
 #include "G4VUserDetectorConstruction.hh"
+#include "globals.hh"
+#include <G4ChordFinder.hh>
+#include "G4EqMagElectricField.hh"
+#include "G4UniformElectricField.hh"
+#include "G4DormandPrince745.hh"
+#include "G4MagneticField.hh"
 
-/// Detector construction allowing to use the geometry read from the GDML file
+class G4VPhysicalVolume;
+class G4LogicalVolume;
+class B1DetectorMessenger;
 
-class G01DetectorConstruction : public G4VUserDetectorConstruction
+/// Detector construction class to define materials and geometry.
+
+class B1DetectorConstruction : public G4VUserDetectorConstruction
 {
   public:
- 
-    G01DetectorConstruction(G4VPhysicalVolume *setWorld = 0)
-    {   
-      fWorld = setWorld;
-    }
+    B1DetectorConstruction();
+    virtual ~B1DetectorConstruction();
+    G4MagneticField* magField;
+    
+    //G4ChordFinder* pChordFinder;
+    virtual G4VPhysicalVolume* Construct();
+    
+    G4LogicalVolume* GetScoringVolume() const { return fScoringVolume; }
+    void SetDeadendThickness(double);
 
-    virtual G4VPhysicalVolume *Construct()
-    {
-      return fWorld;
-    }
+  protected:
+    G4LogicalVolume*  fScoringVolume;
+  
 
-  private:
-
-    G4VPhysicalVolume *fWorld;
+private:
+    double fdeadendZ;
+    double fdeadendXY;
+    B1DetectorMessenger* fMessenger;
 };
 
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
 #endif
+

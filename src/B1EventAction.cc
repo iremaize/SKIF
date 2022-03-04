@@ -24,28 +24,62 @@
 // ********************************************************************
 //
 //
-/// \file G01ActionInitialization.hh
-/// \brief Definition of the G01ActionInitialization class
+/// \file B1EventAction.cc
+/// \brief Implementation of the B1EventAction class
 
-#ifndef G01ActionInitialization_h
-#define G01ActionInitialization_h 1
+#include "B1EventAction.hh"
+#include "B1RunAction.hh"
+#include "B1Analysis.hh"
 
-#include "G4VUserActionInitialization.hh"
-
-/// Action initialization class.
-
-class G01ActionInitialization : public G4VUserActionInitialization
-{
-  public:
-    G01ActionInitialization();
-    virtual ~G01ActionInitialization();
-
-    virtual void BuildForMaster() const;
-    virtual void Build() const;
-};
+#include "G4Event.hh"
+#include "G4RunManager.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-#endif
+B1EventAction::B1EventAction(B1RunAction* runAction)
+	: G4UserEventAction(),
+	fRunAction(runAction),
+    fEdep(0.)
+{
+    energ = 0;
+}
 
-    
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+B1EventAction::~B1EventAction()
+{}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void B1EventAction::BeginOfEventAction(const G4Event*)
+{    
+  fEdep = 0.;
+  energ = 0;
+}
+
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+
+void B1EventAction::EndOfEventAction(const G4Event* event)
+{   
+  // accumulate statistics in run action
+ // fRunAction->AddEdep(fEdep);
+ // fRunAction->FillEnergy(energ);
+  // get analysis manager
+  //auto analysisManager = G4AnalysisManager::Instance();
+
+  // fill histograms
+ // if (energ > 0) {
+//      analysisManager->FillH1(0, energ);
+//  }
+ 
+}
+
+//‘ункци€ накoплени€ энергии частиц
+//void B1EventAction::addParticle(const G4Step* step)
+//{   //«десь мы берем энергию (кинетическую, без массы поко€) в √э¬-ах
+//    energ += step->GetTrack()->GetKineticEnergy();
+    //если мы делим на x/GeV, то переводим из внутрених
+    //единиц в √э¬ы, если умножаем, то √э¬ы переводим в
+    //внутренние единицы Geant4
+//}
+//....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

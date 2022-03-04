@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\CMakeFiles\dd3256795a1d6ddc48818123ee25d21f\generate.stamp.rule">
+    <CustomBuild Include="D:\tube\build\CMakeFiles\3abcb7b4922a5c4078e958823efa2a20\generate.stamp.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{D6469A0F-7A35-39D4-A5E7-DE2E7DD4065D}</UniqueIdentifier>
+      <UniqueIdentifier>{BA0CFD01-4F07-3A98-A3F6-CEA7833B5D94}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

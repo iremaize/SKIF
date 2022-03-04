@@ -9,8 +9,8 @@ The output was:
 Microsoft (R) Build Engine версии 16.10.2+857e5a733 для .NET Framework
 (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
 
-Сборка начата 18.02.2022 14:02:34.
-Проект "C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\CMakeFiles\3.21.0\CompilerIdC\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
+Сборка начата 04.03.2022 13:58:22.
+Проект "D:\tube\build\CMakeFiles\3.21.0\CompilerIdC\CompilerIdC.vcxproj" в узле 1 (целевые объекты по умолчанию).
 PrepareForBuild:
   Создание каталога "Debug\".
   Создание каталога "Debug\CompilerIdC.tlog\".
@@ -21,7 +21,7 @@ ClCompile:
   CMakeCCompilerId.c
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdC.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdC.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdC.lib" /MACHINE:X64 Debug\CMakeCCompilerId.obj
-  CompilerIdC.vcxproj -> C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\CMakeFiles\3.21.0\CompilerIdC\CompilerIdC.exe
+  CompilerIdC.vcxproj -> D:\tube\build\CMakeFiles\3.21.0\CompilerIdC\CompilerIdC.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_C_COMPILER=%%~$PATH:i
   :VCEnd
@@ -29,20 +29,20 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Файл "Debug\CompilerIdC.tlog\unsuccessfulbuild" удаляется.
   Обращение к "Debug\CompilerIdC.tlog\CompilerIdC.lastbuildstate".
-Сборка проекта "C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\CMakeFiles\3.21.0\CompilerIdC\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
+Сборка проекта "D:\tube\build\CMakeFiles\3.21.0\CompilerIdC\CompilerIdC.vcxproj" завершена (целевые объекты по умолчанию).
 
 Сборка успешно завершена.
     Предупреждений: 0
     Ошибок: 0
 
-Прошло времени 00:00:00.73
+Прошло времени 00:00:00.79
 
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.exe"
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "CompilerIdC.vcxproj"
 
-The C compiler identification is MSVC, found in "C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/CMakeFiles/3.21.0/CompilerIdC/CompilerIdC.exe"
+The C compiler identification is MSVC, found in "D:/tube/build/CMakeFiles/3.21.0/CompilerIdC/CompilerIdC.exe"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler:  
@@ -54,8 +54,8 @@ The output was:
 Microsoft (R) Build Engine версии 16.10.2+857e5a733 для .NET Framework
 (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
 
-Сборка начата 18.02.2022 14:02:35.
-Проект "C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\CMakeFiles\3.21.0\CompilerIdCXX\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
+Сборка начата 04.03.2022 13:58:23.
+Проект "D:\tube\build\CMakeFiles\3.21.0\CompilerIdCXX\CompilerIdCXX.vcxproj" в узле 1 (целевые объекты по умолчанию).
 PrepareForBuild:
   Создание каталога "Debug\".
   Создание каталога "Debug\CompilerIdCXX.tlog\".
@@ -66,7 +66,7 @@ ClCompile:
   CMakeCXXCompilerId.cpp
 Link:
   C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30037\bin\HostX64\x64\link.exe /ERRORREPORT:QUEUE /OUT:".\CompilerIdCXX.exe" /INCREMENTAL:NO /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /PDB:".\CompilerIdCXX.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:".\CompilerIdCXX.lib" /MACHINE:X64 Debug\CMakeCXXCompilerId.obj
-  CompilerIdCXX.vcxproj -> C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\CMakeFiles\3.21.0\CompilerIdCXX\CompilerIdCXX.exe
+  CompilerIdCXX.vcxproj -> D:\tube\build\CMakeFiles\3.21.0\CompilerIdCXX\CompilerIdCXX.exe
 PostBuildEvent:
   for %%i in (cl.exe) do @echo CMAKE_CXX_COMPILER=%%~$PATH:i
   :VCEnd
@@ -74,46 +74,46 @@ PostBuildEvent:
 FinalizeBuildStatus:
   Файл "Debug\CompilerIdCXX.tlog\unsuccessfulbuild" удаляется.
   Обращение к "Debug\CompilerIdCXX.tlog\CompilerIdCXX.lastbuildstate".
-Сборка проекта "C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\CMakeFiles\3.21.0\CompilerIdCXX\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
+Сборка проекта "D:\tube\build\CMakeFiles\3.21.0\CompilerIdCXX\CompilerIdCXX.vcxproj" завершена (целевые объекты по умолчанию).
 
 Сборка успешно завершена.
     Предупреждений: 0
     Ошибок: 0
 
-Прошло времени 00:00:00.59
+Прошло времени 00:00:00.63
 
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.exe"
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "CompilerIdCXX.vcxproj"
 
-The CXX compiler identification is MSVC, found in "C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/CMakeFiles/3.21.0/CompilerIdCXX/CompilerIdCXX.exe"
+The CXX compiler identification is MSVC, found in "D:/tube/build/CMakeFiles/3.21.0/CompilerIdCXX/CompilerIdCXX.exe"
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/CMakeFiles/CMakeTmp
+Change Dir: D:/tube/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_bfe73.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine версии 16.10.2+857e5a733 для .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_bbc2c.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine версии 16.10.2+857e5a733 для .NET Framework
 (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
 
   Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.29.30040 для x64
   (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
   CMakeCCompilerABI.c
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bfe73.dir\Debug\\" /Fd"cmTC_bfe73.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c"
-  cmTC_bfe73.vcxproj -> C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\CMakeFiles\CMakeTmp\Debug\cmTC_bfe73.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"cmTC_bbc2c.dir\Debug\\" /Fd"cmTC_bbc2c.dir\Debug\vc142.pdb" /external:W3 /Gd /TC /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCCompilerABI.c"
+  cmTC_bbc2c.vcxproj -> D:\tube\build\CMakeFiles\CMakeTmp\Debug\cmTC_bbc2c.exe
 
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/CMakeFiles/CMakeTmp
+Change Dir: D:/tube/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_7aef8.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine версии 16.10.2+857e5a733 для .NET Framework
+Run Build Command(s):C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/MSBuild/Current/Bin/MSBuild.exe cmTC_ce8cc.vcxproj /p:Configuration=Debug /p:Platform=x64 /p:VisualStudioVersion=16.0 /v:m && Microsoft (R) Build Engine версии 16.10.2+857e5a733 для .NET Framework
 (C) Корпорация Майкрософт (Microsoft Corporation). Все права защищены.
 
   Оптимизирующий компилятор Microsoft (R) C/C++ версии 19.29.30040 для x64
   (C) Корпорация Майкрософт (Microsoft Corporation).  Все права защищены.
   CMakeCXXCompilerABI.cpp
-  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_7aef8.dir\Debug\\" /Fd"cmTC_7aef8.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp"
-  cmTC_7aef8.vcxproj -> C:\Geant4\share\Geant4-10.6.3\examples\extended\persistency\gdml\G01\build\CMakeFiles\CMakeTmp\Debug\cmTC_7aef8.exe
+  cl /c /Zi /W3 /WX- /diagnostics:column /Od /Ob0 /D _MBCS /D WIN32 /D _WINDOWS /D "CMAKE_INTDIR=\"Debug\"" /Gm- /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /GR /Fo"cmTC_ce8cc.dir\Debug\\" /Fd"cmTC_ce8cc.dir\Debug\vc142.pdb" /external:W3 /Gd /TP /errorReport:queue "C:\Program Files\CMake\share\cmake-3.21\Modules\CMakeCXXCompilerABI.cpp"
+  cmTC_ce8cc.vcxproj -> D:\tube\build\CMakeFiles\CMakeTmp\Debug\cmTC_ce8cc.exe
 
 
 

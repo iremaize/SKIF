@@ -7,33 +7,6 @@ C:/Geant4/lib/Geant4-10.6.3/Geant4PackageCache.cmake
 C:/Geant4/lib/Geant4-10.6.3/Modules/IntelCompileFeatures.cmake
 C:/Geant4/lib/Geant4-10.6.3/Modules/MSVCCompileFeatures.cmake
 C:/Geant4/lib/Geant4-10.6.3/UseGeant4.cmake
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/CMakeLists.txt
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/assembly.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/auxiliary.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/axes.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/block.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/CMakeFiles/3.21.0/CMakeCCompiler.cmake
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/CMakeFiles/3.21.0/CMakeCXXCompiler.cmake
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/CMakeFiles/3.21.0/CMakeRCCompiler.cmake
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/build/CMakeFiles/3.21.0/CMakeSystem.cmake
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/divisionvol.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/entity.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/g01.in
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/g01.out
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/loop.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/mat_nist.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/materials.xml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/matricesandloops.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/multiUnion.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/opticalsurfaces.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/pTube.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/parameterized.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/replicated.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/scale.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/scaledTube.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/solids.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/tess.gdml
-C:/Geant4/share/Geant4-10.6.3/examples/extended/persistency/gdml/G01/vis.mac
 C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeCCompiler.cmake.in
 C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeCCompilerABI.c
 C:/Program Files/CMake/share/cmake-3.21/Modules/CMakeCInformation.cmake
@@ -165,3 +138,14 @@ C:/Qt/5.15.1/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake
 C:/Qt/5.15.1/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake
 C:/Qt/5.15.1/msvc2019_64/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake
 C:/Qt/5.15.1/msvc2019_64/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake
+D:/tube/CMakeLists.txt
+D:/tube/build/CMakeFiles/3.21.0/CMakeCCompiler.cmake
+D:/tube/build/CMakeFiles/3.21.0/CMakeCXXCompiler.cmake
+D:/tube/build/CMakeFiles/3.21.0/CMakeRCCompiler.cmake
+D:/tube/build/CMakeFiles/3.21.0/CMakeSystem.cmake
+D:/tube/exampleB1.in
+D:/tube/exampleB1.out
+D:/tube/init_vis.mac
+D:/tube/run1.mac
+D:/tube/run2.mac
+D:/tube/vis.mac
