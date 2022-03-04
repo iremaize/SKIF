@@ -41,13 +41,13 @@
 class G4VPhysicalVolume;
 class G4LogicalVolume;
 class B1DetectorMessenger;
-
+class G4GDMLParser;
 /// Detector construction class to define materials and geometry.
 
 class B1DetectorConstruction : public G4VUserDetectorConstruction
 {
   public:
-    B1DetectorConstruction();
+    B1DetectorConstruction(const G4GDMLParser& parser);
     virtual ~B1DetectorConstruction();
     G4MagneticField* magField;
     
@@ -65,6 +65,7 @@ private:
     double fdeadendZ;
     double fdeadendXY;
     B1DetectorMessenger* fMessenger;
+    const G4GDMLParser& fParser;
 };
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......

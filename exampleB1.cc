@@ -42,23 +42,49 @@
 #include "FTFP_BERT.hh"
 #include "G4VisExecutive.hh"
 #include "G4UIExecutive.hh"
-
+#include "G4GDMLParser.hh"
 #include "Randomize.hh"
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
+void print_aux(const G4GDMLAuxListType* auxInfoList, G4String prepend = "|")
+{
+    for (std::vector<G4GDMLAuxStructType>::const_iterator iaux = auxInfoList->begin();
+        iaux != auxInfoList->end(); iaux++)
+    {
+        G4String str = iaux->type;
+        G4String val = iaux->value;
+        G4String unit = iaux->unit;
+
+        G4cout << prepend << str << " : " << val << " " << unit << G4endl;
+
+        if (iaux->auxList) print_aux(iaux->auxList, prepend + "|");
+    }
+    return;
+}
 
 int main(int argc,char** argv)
 {
-  // Detect interactive mode (if no arguments) and define UI session
-  //
-  G4UIExecutive* ui = 0;
-  if ( argc == 1 ) {
-    ui = new G4UIExecutive(argc, argv);
-  }
+    if (argc < 2)
+    {
+        G4cout << "Error! Mandatory input file is not specified!" << G4endl;
+        G4cout << G4endl;
+        return -1;
+    }
 
-  // Optionally: choose a different Random engine...
-  // G4Random::setTheEngine(new CLHEP::MTwistEngine);
-  
+    G4GDMLParser parser;
+
+    // Uncomment the following if wish to avoid names stripping
+    // parser.SetStripFlag(false);
+
+    parser.SetOverlapCheck(true);
+    parser.Read(argv[1]);
+
+    if (argc > 4)
+    {
+        G4cout << "Error! Too many arguments!" << G4endl;
+        G4cout << G4endl;
+        return -1;
+    }
   // Construct the default run manager
   //
 #ifdef G4MULTITHREADED
@@ -67,19 +93,21 @@ int main(int argc,char** argv)
   G4RunManager* runManager = new G4RunManager;
 #endif
 
+
   // Set mandatory initialization classes
   //
   // Detector construction
-  runManager->SetUserInitialization(new B1DetectorConstruction());
+  runManager->SetUserInitialization(new B1DetectorConstruction(
+      parser));
 
   // Physics list
   G4VModularPhysicsList* physicsList = new FTFP_BERT;
   physicsList->SetVerboseLevel(1);
   runManager->SetUserInitialization(physicsList);
-    
+
   // User action initialization
   runManager->SetUserInitialization(new B1ActionInitialization());
-  
+  runManager->Initialize();
   // Initialize visualization
   //
   G4VisManager* visManager = new G4VisExecutive;
@@ -89,20 +117,36 @@ int main(int argc,char** argv)
 
   // Get the pointer to the User Interface manager
   G4UImanager* UImanager = G4UImanager::GetUIpointer();
+  G4cout << std::endl;
+
+  if (argc >= 3)
+  {
+      
+      parser.SetRegionExport(true);
+      //     parser.SetEnergyCutsExport(true);
+      parser.Write(argv[2], G4TransportationManager::GetTransportationManager()
+          ->GetNavigatorForTracking()->GetWorldVolume()->GetLogicalVolume());
+  }
+
+
+
+
+
 
   // Process macro or start UI session
   //
-  if ( ! ui ) { 
-    // batch mode
-    G4String command = "/control/execute ";
-    G4String fileName = argv[1];
-    UImanager->ApplyCommand(command+fileName);
+  if (argc == 4)   // batch mode
+  {
+      G4String command = "/control/execute ";
+      G4String fileName = argv[3];
+      UImanager->ApplyCommand(command + fileName);
   }
-  else { 
-    // interactive mode
-    UImanager->ApplyCommand("/control/execute init_vis.mac");
-    ui->SessionStart();
-    delete ui;
+  else           // interactive mode
+  {
+      G4UIExecutive* ui = new G4UIExecutive(argc, argv);
+      UImanager->ApplyCommand("/control/execute vis.mac");
+      ui->SessionStart();
+      delete ui;
   }
 
   // Job termination

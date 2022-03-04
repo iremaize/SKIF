@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<gdml xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://service-spi.web.cern.ch/service-spi/app/releases/GDML/schema/gdml.xsd">
+ <define>
+  <constant name="HALFPI" value="pi/2."/>
+  <constant name="PI" value="1.*pi"/>
+  <constant name="TWOPI" value="2.*pi"/>
+   <position name="Tracker_pos" x="910"/>
+   <position name="Phantom_pos" x="800"/>
+   <position name="subTrack" x="145.0"/>
+  <position name="center"/>
+  <rotation name="rotatebyy" y="HALFPI/2."/>
+</define>
+<materials>
+		<element name="videRef" formula="VACUUM" Z="1">
+			<atom value="1"/>
+		</element>
+		<element name="silicon" formula="Si" Z="14">
+			<atom value="28.0855"/>
+		</element>
+		<element name="nickel" formula="Ni" Z="28">
+			<atom value="58.6934"/>
+		</element>
+		<element name="iron" formula="Fe" Z="26">
+			<atom value="55.845"/>
+		</element>
+		<element name="carbon" formula="C" Z="6">
+			<atom value="12.0107"/>
+		</element>
+		<element name="oxygen" formula="O" Z="8">
+			<atom value="15.9994"/>
+		</element>
+		<element name="phosphorus" formula="P" Z="15">
+			<atom value="30.97376"/>
+		</element>
+		<element name="sulfur" formula="S" Z="16">
+			<atom value="32.065"/>
+		</element>
+		<element name="chromium" formula="Cr" Z="24">
+			<atom value="51.9961"/>
+		</element>
+		<element name="manganese" formula="Mn" Z="25">
+			<atom value="54.938045"/>
+		</element>
+		<element name="molybdenum" formula="Mo" Z="42">
+			<atom value="95.96"/>
+		</element>
+		<element name="aluminum" formula="Al" Z="13">
+			<atom value="26.981539"/>
+		</element>
+		<element name="hydrogen" formula="H" Z="1">
+			<atom value="1.00794"/>
+		</element>
+		<element name="nitrogen" formula="N" Z="7">
+			<atom value="14.007"/>
+		</element>
+		<element name="titanium" formula="Ti" Z="22">
+			<atom value="47.867"/>
+		</element>
+		<element name="wolfram" formula="W" Z="74">
+			<atom value="183.84"/>
+		</element>
+		<element name="vanadium" formula="V" Z="23">
+			<atom value="50.9415"/>
+		</element>
+		<element name="copper" formula="Cu" Z="29">
+			<atom value="63.546"/>
+		</element>
+		<element name="zinc" formula="Zn" Z="30">
+			<atom value="65.38"/>
+		</element>
+		<element name="lead" formula="Pb" Z="82">
+			<atom value="207.2"/>
+		</element>
+		<material name="VACUUM" formula="VACUUM">
+			<D value ="1E-25" unit="g/cm3"/>
+			<fraction n="1.0" ref="videRef"/>
+		</material>
+		<material name="Wolfram" formula="Wolfram">
+			<D value ="19.3" unit="g/cm3"/>
+			<fraction n="1.0" ref="wolfram"/>
+		</material>
+		<material name="SILICON" formula="SILICON">
+			<D value ="2.33" unit="g/cm3"/>
+			<fraction n="1." ref="silicon"/>
+		</material>
+		<material name="NICKEL_IRON__INVAR_" formula="NICKEL_IRON__INVAR_">
+			<D value ="8.1" unit="g/cm3"/>
+			<fraction n="0.36" ref="nickel"/>
+			<fraction n="0.64" ref="iron"/>
+		</material>
+		<material name="SIC" formula="SIC">
+			<D value ="3." unit="g/cm3"/>
+			<fraction n="0.299547" ref="carbon"/>
+			<fraction n="0.700453" ref="silicon"/>
+		</material>
+		<material name="FUSED_SILICA" formula="FUSED_SILICA">
+			<D value ="2.2" unit="g/cm3"/>
+			<fraction n="0.532565" ref="oxygen"/>
+			<fraction n="0.467435" ref="silicon"/>
+		</material>
+		<material name="STEEL_STAINLESS_316" formula="STEEL_STAINLESS_316">
+			<D value ="8." unit="g/cm3"/>
+			<fraction n="0.00041" ref="carbon"/>
+			<fraction n="0.00507" ref="silicon"/>
+			<fraction n="0.00023" ref="phosphorus"/>
+			<fraction n="0.00015" ref="sulfur"/>
+			<fraction n="0.17" ref="chromium"/>
+			<fraction n="0.01014" ref="manganese"/>
+			<fraction n="0.669" ref="iron"/>
+			<fraction n="0.12" ref="nickel"/>
+			<fraction n="0.025" ref="molybdenum"/>
+		</material>
+		<material name="ALUMINIUM_ALLOY_6061_T651" formula="ALUMINIUM_ALLOY_6061_T651">
+			<D value ="2.7" unit="g/cm3"/>
+			<fraction n="1." ref="aluminum"/>
+		</material>
+		<material name="TITANIUM_ALLOY_GRADE_5" formula="TITANIUM_ALLOY_GRADE_5">
+			<D value ="4.43" unit="g/cm3"/>
+			<fraction n="0.00011" ref="hydrogen"/>
+			<fraction n="0.00057" ref="carbon"/>
+			<fraction n="0.00021" ref="nitrogen"/>
+			<fraction n="0.00141" ref="oxygen"/>
+			<fraction n="0.06125" ref="aluminum"/>
+			<fraction n="0.89363" ref="titanium"/>
+			<fraction n="0.04" ref="vanadium"/>
+			<fraction n="0.00283" ref="iron"/>
+		</material>
+		<material name="KAPTON_FILM" formula="KAPTON_FILM">
+			<D value ="1.42" unit="g/cm3"/>
+			<fraction n="0.026362" ref="hydrogen"/>
+			<fraction n="0.691133" ref="carbon"/>
+			<fraction n="0.07327" ref="nitrogen"/>
+			<fraction n="0.209235" ref="oxygen"/>
+		</material>
+		<material name="POLYIMIDE" formula="POLYIMIDE">
+			<D value ="1.42" unit="g/cm3"/>
+			<fraction n="0.02636" ref="hydrogen"/>
+			<fraction n="0.69113" ref="carbon"/>
+			<fraction n="0.07733" ref="nitrogen"/>
+			<fraction n="0.20518" ref="oxygen"/>
+		</material>
+		<material name="STEEL_STAINLESS_409" formula="STEEL_STAINLESS_409">
+			<D value ="7.8" unit="g/cm3"/>
+			<fraction n="0.00079" ref="carbon"/>
+			<fraction n="0.00983" ref="silicon"/>
+			<fraction n="0.00044" ref="phosphorus"/>
+			<fraction n="0.00044" ref="sulfur"/>
+			<fraction n="0.00737" ref="titanium"/>
+			<fraction n="0.1113" ref="chromium"/>
+			<fraction n="0.00983" ref="manganese"/>
+			<fraction n="0.86" ref="iron"/>
+		</material>
+		<material name="MOLYBDENUM" formula="MOLYBDENUM">
+			<D value ="10.22" unit="g/cm3"/>
+			<fraction n="1." ref="molybdenum"/>
+		</material>
+		<material name="BRASS" formula="BRASS">
+			<D value ="8.489" unit="g/cm3"/>
+			<fraction n="0.615" ref="copper"/>
+			<fraction n="0.3524" ref="zinc"/>
+			<fraction n="0.03252" ref="lead"/>
+		</material>
+		<material name="POLYBUTYLENE_TEREPHTHALATE" formula="POLYBUTYLENE_TEREPHTHALATE">
+			<D value ="1.31" unit="g/cm3"/>
+			<fraction n="0.054923" ref="hydrogen"/>
+			<fraction n="0.654471" ref="carbon"/>
+			<fraction n="0.290606" ref="oxygen"/>
+		</material>
+		<material name="RYTON" formula="RYTON">
+			<D value ="1.44" unit="g/cm3"/>
+			<fraction n="0.037276" ref="hydrogen"/>
+			<fraction n="0.666268" ref="carbon"/>
+			<fraction n="0.296456" ref="sulfur"/>
+		</material>
+		<material name="Air">
+   <D value="1.290" unit="mg/cm3"/>
+   <fraction n="0.7" ref="nitrogen"/>
+   <fraction n="0.3" ref="oxygen"/>
+  </material>
+  <material name="Water">
+   <D value="1." unit="mg/cm3"/>
+   <fraction n="0.7" ref="hydrogen"/>
+   <fraction n="0.3" ref="oxygen"/>
+  </material>
+	</materials>
+<solids>
+ <cone lunit="cm" name="c1" z="35.0" rmax1="13.0" rmax2="13.0" deltaphi="TWOPI"/>
+ <cone lunit="cm" name="c2" z="45.0" rmax1="20.0" rmax2="20.0" deltaphi="TWOPI"/>
+  <box  lunit="m" name="WorldBox" x="6" y="6" z="6" />
+  <box  lunit="cm" name="STracker" x="2" y="100" z="100" />
+  <box  lunit="cm" name="SCible" x="8" y="10" z="10" />
+  <box  lunit="cm" name="Window" x="30" y="10" z="10" />
+  <box  lunit="cm" name="Beryl" x="0.00001" y="10" z="10" />
+  <box  lunit="cm" name="PhantomW" x="20" y="100" z="100" />
+  <box  lunit="cm" name="PhantomB" x="20" y="10" z="10" />
+   <subtraction name="Phantom">
+   <first ref="PhantomW"/> <second ref="PhantomB"/>
+   <positionref ref="center"/> 
+  </subtraction>
+    <subtraction name="sub0">
+   <first ref="c2"/> <second ref="c1"/>
+   <positionref ref="center"/> 
+  </subtraction>
+  <subtraction name="sub1">
+   <first ref="sub0"/> <second ref="Window"/>
+   <positionref ref="subTrack"/> 
+  </subtraction>
+
+  
+   
+
+</solids>
+<structure>
+<volume name="BerylWin">
+            <materialref ref="SILICON"/>
+            <solidref ref="Beryl"/>
+            <auxiliary auxtype="SensitiveVolume" auxvalue="true"/>
+        </volume>
+    <volume name="Phantom">
+            <materialref ref="Water"/>
+            <solidref ref="Phantom"/>
+            <auxiliary auxtype="SensitiveVolume" auxvalue="true"/>
+        </volume>
+         <volume name="Bones">
+            <materialref ref="STEEL_STAINLESS_409"/>
+            <solidref ref="PhantomB"/>
+            <auxiliary auxtype="SensitiveVolume" auxvalue="true"/>
+        </volume>
+         <volume name="Tube">
+            <materialref ref="MOLYBDENUM"/>
+            <solidref ref="sub1"/>
+            <auxiliary auxtype="SensitiveVolume" auxvalue="true"/>
+        </volume>
+        <volume name="Tracker">
+            <materialref ref="SILICON"/>
+            <solidref ref="STracker"/>
+            <auxiliary auxtype="SensitiveVolume" auxvalue="true"/>
+        </volume>
+        <volume name="Cible">
+            <materialref ref="Wolfram"/>
+            <solidref ref="SCible"/>
+            <auxiliary auxtype="SensitiveVolume" auxvalue="true"/>
+        </volume>
+        <volume name="World">
+            <materialref ref="VACUUM"/>
+            <solidref ref="WorldBox"/>
+            <physvol>
+                <volumeref ref="Tracker"/>
+                <positionref ref="Tracker_pos"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Cible"/>
+                <rotationref ref="rotatebyy"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="BerylWin"/>
+                <positionref ref="subTrack"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Tube"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Phantom"/>
+                <positionref ref="Phantom_pos"/>
+            </physvol>
+            <physvol>
+                <volumeref ref="Bones"/>
+                <positionref ref="Phantom_pos"/>
+            </physvol>
+            
+        </volume>
+    </structure>
+<setup version="1.0" name="Default">
+        <world ref="World"/>
+    </setup>
+</gdml>

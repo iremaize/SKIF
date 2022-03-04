@@ -1,0 +1,37 @@
+/run/verbose 2
+/run/initialize
+/control/execute vis.mac
+/vis/open OGL 600x600-0+0
+/vis/sceneHandler/create OGL
+/vis/viewer/create ! ! 600x600-0+0
+/vis/viewer/set/autoRefresh false
+/vis/verbose errors
+/vis/drawVolume
+/vis/scene/create
+/vis/scene/add/volume world -1 -1 none m 0 0 0 0 0 0
+/vis/sceneHandler/attach
+/vis/viewer/zoom .4
+/vis/scene/add/trajectories smooth
+/tracking/storeTrajectory 2
+/vis/modeling/trajectories/create/drawByCharge
+/vis/modeling/trajectories/drawByCharge-0/default/setDrawStepPts true
+/vis/scene/notifyHandlers scene-0
+/vis/modeling/trajectories/drawByCharge-0/default/setStepPtsSize 2
+/vis/scene/notifyHandlers scene-0
+/vis/viewer/set/autoRefresh true
+/vis/verbose warnings
+/vis/viewer/set/style surface
+/control/execute run1.mac
+/run/initialize
+/control/verbose 2
+/run/verbose 2
+/event/verbose 0
+/tracking/verbose 1
+/gun/particle gamma
+/gun/energy 6 MeV
+/run/beamOn 5
+/vis/scene/notifyHandlers scene-0
+/gun/particle proton
+/gun/energy 210 MeV
+/tracking/verbose 0
+/run/beamOn 100
