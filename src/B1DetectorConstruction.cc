@@ -86,15 +86,17 @@ G4VPhysicalVolume* B1DetectorConstruction::Construct()
             G4cout << "--> Type: " << (*vit).type
                 << " Value: " << (*vit).value << G4endl;
         }
-        if (((*iter).first)->GetName() == "Tracker") {//"Tracker"
-            sv = iter;
-            G4cout << "Scoring Volume set to " << ((*sv).first)->GetName() << G4endl;
-        }
+
+        //if (((*iter).first)->GetName() == "Tracker") {//"Tracker"
+        sv = iter;
+        G4cout << "Scoring Volume set to " << ((*sv).first)->GetName() << G4endl;
+        //}
+
+
+        //G4cout << G4endl;
     }
-    G4cout << G4endl;
-
-    fScoringVolume = (*sv).first;
-
+        fScoringVolume = (*sv).first;
+    
   
   //
   //always return the physical World

@@ -1,66 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="D:\tube\exampleB1.cc">
+    <ClCompile Include="C:\Users\01\tube\SKIF\exampleB1.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tube\src\B1ActionInitialization.cc">
+    <ClCompile Include="C:\Users\01\tube\SKIF\src\B1ActionInitialization.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tube\src\B1DetectorConstruction.cc">
+    <ClCompile Include="C:\Users\01\tube\SKIF\src\B1DetectorConstruction.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tube\src\B1DetectorMessenger.cc">
+    <ClCompile Include="C:\Users\01\tube\SKIF\src\B1DetectorMessenger.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tube\src\B1EventAction.cc">
+    <ClCompile Include="C:\Users\01\tube\SKIF\src\B1EventAction.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tube\src\B1PrimaryGeneratorAction.cc">
+    <ClCompile Include="C:\Users\01\tube\SKIF\src\B1PrimaryGeneratorAction.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tube\src\B1RunAction.cc">
+    <ClCompile Include="C:\Users\01\tube\SKIF\src\B1RunAction.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="D:\tube\src\B1SteppingAction.cc">
+    <ClCompile Include="C:\Users\01\tube\SKIF\src\B1SteppingAction.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="D:\tube\include\B1ActionInitialization.hh">
+    <ClInclude Include="C:\Users\01\tube\SKIF\include\B1ActionInitialization.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\tube\include\B1Analysis.hh">
+    <ClInclude Include="C:\Users\01\tube\SKIF\include\B1Analysis.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\tube\include\B1DetectorConstruction.hh">
+    <ClInclude Include="C:\Users\01\tube\SKIF\include\B1DetectorConstruction.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\tube\include\B1DetectorMessenger.hh">
+    <ClInclude Include="C:\Users\01\tube\SKIF\include\B1DetectorMessenger.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\tube\include\B1EventAction.hh">
+    <ClInclude Include="C:\Users\01\tube\SKIF\include\B1EventAction.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\tube\include\B1PrimaryGeneratorAction.hh">
+    <ClInclude Include="C:\Users\01\tube\SKIF\include\B1PrimaryGeneratorAction.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\tube\include\B1RunAction.hh">
+    <ClInclude Include="C:\Users\01\tube\SKIF\include\B1RunAction.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="D:\tube\include\B1SteppingAction.hh">
+    <ClInclude Include="C:\Users\01\tube\SKIF\include\B1SteppingAction.hh">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <CustomBuild Include="D:\tube\CMakeLists.txt" />
+    <CustomBuild Include="C:\Users\01\tube\SKIF\CMakeLists.txt" />
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Header Files">
-      <UniqueIdentifier>{4C15DE77-339A-37AF-B15F-8133921C134A}</UniqueIdentifier>
+      <UniqueIdentifier>{AE1BF02F-45AB-3977-9B22-104EFBB32F6E}</UniqueIdentifier>
     </Filter>
     <Filter Include="Source Files">
-      <UniqueIdentifier>{4C1A849C-ECD5-3EBE-BA96-957C303BD142}</UniqueIdentifier>
+      <UniqueIdentifier>{6D048244-C44C-3DE0-A871-10902C238108}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
