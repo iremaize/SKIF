@@ -28,7 +28,6 @@
 /// \brief Implementation of the B1PrimaryGeneratorAction class
 
 #include "B1PrimaryGeneratorAction.hh"
-
 #include "G4LogicalVolumeStore.hh"
 #include "G4LogicalVolume.hh"
 #include "G4Box.hh"
@@ -38,7 +37,11 @@
 #include "G4ParticleDefinition.hh"
 #include "G4SystemOfUnits.hh"
 #include "Randomize.hh"
-
+#include <iostream>
+#include <stdlib.h>
+#include <time.h>
+#include <fstream>
+using namespace std;
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 B1PrimaryGeneratorAction::B1PrimaryGeneratorAction()
@@ -55,8 +58,41 @@ B1PrimaryGeneratorAction::B1PrimaryGeneratorAction()
   G4ParticleDefinition* particle
     = particleTable->FindParticle(particleName="e-");
   fParticleGun->SetParticleDefinition(particle);
-  fParticleGun->SetParticleMomentumDirection(G4ThreeVector(0.5, 0.2, 0.3)); //0.0017
-  fParticleGun->SetParticlePosition(G4ThreeVector(0, 0, 0));
+
+
+
+
+
+  float distrib_array[724][3];
+  ifstream fp("distrib.txt");
+  if (!fp) {
+      cout << "Error, distrib file couldn't be opened" << endl;
+  }
+  for (int row = 0; row < 724; row++) {  // stop loops if nothing to read
+      for (int column = 0; column < 3; column++) {
+          fp >> distrib_array[row][column];
+          if (!fp) {
+              cout << "Error reading file for element " << row << "," << column << endl;
+          }
+      }
+  }
+
+  srand(time(NULL));
+
+  // Получить случайное число - формула
+  int distrib_number = rand() % (724 + 1);
+  int x_pos;
+  int y_pos;
+  float rand_pos = distrib_array[distrib_number][0];
+  float rand_angle_x = distrib_array[distrib_number][1];
+  float rand_angle_y = distrib_array[distrib_number][2];
+  if (rand_angle_x > 0) { x_pos = 10; }
+  else { x_pos = -10; }
+  if (rand_angle_y > 0) { y_pos = 10; }
+  else { y_pos = -10; }
+
+  fParticleGun->SetParticleMomentumDirection(G4ThreeVector(rand_angle_x, rand_angle_y, 1)); //0.0017
+  fParticleGun->SetParticlePosition(G4ThreeVector(x_pos, y_pos, rand_pos));
   fParticleGun->SetParticleEnergy(3.*GeV);
 }
 

@@ -55,7 +55,8 @@ class B1RunAction : public G4UserRunAction
     ///ќбъ€вл€ем функцию, которую будем использовать дл€ сбора
     ///данных моделировани€
     void FillEnergy(G4double);
-    void AddEdep (G4double edep); 
+    void AddEdep (G4double edep);
+
     G4int eventsNumber;
 
   private:

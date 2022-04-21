@@ -40,7 +40,9 @@
 #include "G4LogicalVolume.hh"
 #include "G4UnitsTable.hh"
 #include "G4SystemOfUnits.hh"
-
+#include <iostream>
+#include <fstream>
+using namespace std;
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
 B1RunAction::B1RunAction()
@@ -64,6 +66,7 @@ B1RunAction::B1RunAction()
   analysisManager->CreateH1("E5", "Weight Energy e- and p+", 100, 0., 500*MeV);
   analysisManager->CreateH1("E6", "Weight Energy gamma", 100, 0., 500 * MeV);
   //analysisManager->CreateH2("E&R", "Energy&Radius", 100, 0., 5 * MeV, 100, 0., 50 * cm);
+
 
 
 }
