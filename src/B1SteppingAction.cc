@@ -67,19 +67,15 @@ void B1SteppingAction::UserSteppingAction(const G4Step* step)
     //Название физического объема в котором мы будем регистрировать
     //частицы, он у нас будет играть роль чуствительного объема или
     //детектора
-    G4String name = "Shape2";
-    G4String name3 = "Shape3";
-    G4String name4 = "Shape4";
-    G4String name5 = "Shape5";
-    G4String name21 = "Shape12";
-    G4String name22 = "Shape13";
-    G4String nameDet = "ShapeDet";
+    G4String name;
+    G4LogicalVolume* detVolume = fScoringVolume;
+
     //Проверка условия, что частица находится в интересуещем нас объеме
 
 
     //ДЕТЕКТОР 1
     
-    if (nameDet == vel->GetName()) {
+    if (detVolume == vel->GetLogicalVolume()) {
         //Если находится то передаем все что связано с шаго
         //в EventAction
         pEnerg = step->GetTrack()->GetKineticEnergy();

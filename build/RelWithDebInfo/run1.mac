@@ -9,9 +9,9 @@
 /run/verbose 0
 /event/verbose 0
 
-/gun/particle e-
-/gun/energy 3 GeV
-/tracking/verbose 0
+#/gun/particle e-
+#/gun/energy 3 GeV
+/tracking/verbose 2
 #
 /analysis/setFileName hist1.csv
 /run/beamOn 100
