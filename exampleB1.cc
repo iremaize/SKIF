@@ -118,7 +118,7 @@ int main(int argc,char** argv)
   // Get the pointer to the User Interface manager
   G4UImanager* UImanager = G4UImanager::GetUIpointer();
   G4cout << std::endl;
-
+/*
   if (argc >= 3)
   {
       
@@ -127,7 +127,7 @@ int main(int argc,char** argv)
       parser.Write(argv[2], G4TransportationManager::GetTransportationManager()
           ->GetNavigatorForTracking()->GetWorldVolume()->GetLogicalVolume());
   }
-
+  */
 
 
 
@@ -135,10 +135,10 @@ int main(int argc,char** argv)
 
   // Process macro or start UI session
   //
-  if (argc == 4)   // batch mode
+  if (argc == 3)   // batch mode
   {
       G4String command = "/control/execute ";
-      G4String fileName = argv[3];
+      G4String fileName = argv[2];
       UImanager->ApplyCommand(command + fileName);
   }
   else           // interactive mode

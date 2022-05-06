@@ -14,4 +14,4 @@
 /tracking/verbose 2
 #
 /analysis/setFileName hist1.csv
-/run/beamOn 100
+/run/beamOn 10000
